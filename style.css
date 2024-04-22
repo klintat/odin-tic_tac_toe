@@ -101,13 +101,13 @@ h1:hover, h2:hover {
     background: var(--bg-green);
 }
 
-.gird__square {
-    background: var(--bg-white);
+.grid__square {
+    background-color: var(--bg-white);
     border-radius: 0.3rem;
     border: var(--border);
 }
 
-.gird__square:hover {
+.grid__square:hover {
     cursor: pointer;
 }
 

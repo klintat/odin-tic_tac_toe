@@ -1,8 +1,8 @@
 :root {
     --bg-pink: linear-gradient(
         90deg,
-        rgb(206, 150, 251) 0%,
-        rgb(255, 143, 207) 100%
+        rgb(206, 150, 251) 30%,
+        rgb(255, 143, 207) 70%
     );
 
     --bg-green: linear-gradient(
@@ -12,19 +12,16 @@
     );
 
     --bg-yellow: linear-gradient(
-        90deg,
-        rgb(255, 239, 64) 30%,
-        rgb(246, 172, 11) 100%
+        45deg,
+        rgb(179, 255, 64) 20%,
+        rgb(246, 172, 11) 80%
     );
 
     --bg-white: rgb(255, 255, 255);
     --bg-modal: #0e110eaf;
-    --text-white: white;
-    --text-dark: rgb(54, 54, 54);
-    --text-light: #cfcfcf;
+    --text-light: #ffffff;
     --text-gold: rgb(255, 217, 0);
-    --dark: #080808;
-    --border: 0.1rem solid rgb(224, 224, 224);
+    --dark: #05a9e4;
 }
 
 body {
@@ -51,13 +48,12 @@ h1:hover, h2:hover {
 
 #info {
     text-align: center;
-    width: 15rem;
+    width: 20rem;
     color: var(--text-gold);
 }
 
 #info__title {
-    font-size: 2rem;
-
+    font-size: 5rem;
 }
 
 .info__player {
@@ -66,7 +62,7 @@ h1:hover, h2:hover {
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.3rem;
-    border: var(--border);
+    border: 3px solid var(--text-gold);
     color: var(--dark);
     background: var(--bg-white);
 }
@@ -104,7 +100,6 @@ h1:hover, h2:hover {
 .grid__square {
     background-color: var(--bg-white);
     border-radius: 0.3rem;
-    border: var(--border);
 }
 
 .grid__square:hover {
@@ -122,19 +117,20 @@ h1:hover, h2:hover {
 
 #instructions__text {
     text-align: center;
-    font-size: 1rem;
-    color: var(--text-white);
+    font-size: 1.5rem;
+    color: var(--text-gold);
 }
 
 #instructions__btn {
     cursor: pointer;
-    width: 10rem;
+    width: 12rem;
+    height: 3.5rem;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 2rem;
     background: var(--dark);
-    border: var(--border);
-    color: var(--text-white);
+    border: none;
+    color: var(--text-light);
 }
 
 #instructions__btn:active {
@@ -161,9 +157,9 @@ h1:hover, h2:hover {
     height: 65%;
     width: 40%;
     border-radius: 5rem;
-    color: var(--text-white);
+    color: var(--text-light);
     background: var(--bg-yellow);
-    border: var(--dark) solid 0.1rem;
+    border: var(--bg-yellow) solid 0.1rem;
 }
 
 /* FORM */
@@ -183,10 +179,14 @@ input {
     font-size: 1rem;
     border-radius: 2rem;
     padding: 0.625rem 1.25rem;
+    border: 2px solid var(--dark);
+    color: var(--text-light);
+    background-color: var(--dark);
 }
 
 ::placeholder {
     font-style: italic;
+    color: var(--text-light);
 }
 
 input[type="submit"]:active {
